@@ -75,6 +75,14 @@ Something like:
     from 'no_reply@example.com'
     # ...
 
+And if you want to set the mail priority, add request level variable @priority 
+Something like:
+  def list_send(recipient)
+    @priority = 5
+    # ...
+
+@priority could be any number, ar_mailer sort mails on priority and send it in the desc order.
+
 Edit config/environments/production.rb and set the delivery method:
 
   config.action_mailer.delivery_method = :activerecord

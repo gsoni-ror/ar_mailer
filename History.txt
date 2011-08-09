@@ -1,3 +1,8 @@
+= 2.1.9
+
+* Miscellaneous Updates
+  * Added adzap-ar_mailer priority to send mails in priority.
+
 = 2.1.8
 
 * Bugs fixed

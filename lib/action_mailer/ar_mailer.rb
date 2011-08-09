@@ -23,11 +23,17 @@ class ActionMailer::Base
   # used.
 
   def perform_delivery_activerecord(mail)
+    require "action_mailer/ar_sendmail"
     destinations = mail.destinations
     mail.ready_to_send
     sender = (mail['return-path'] && mail['return-path'].spec) || mail.from.first
     destinations.each do |destination|
-      self.class.email_class.create :mail => mail.encoded, :to => destination, :from => sender
+      m = self.class.email_class.create :mail => mail.encoded, :to => destination, :from => sender, :priority => (@priority.present? ? @priority : 3)
+      if m.priority==-1
+        sendmail = ActionMailer::ARSendmail.new
+        sendmail.deliver([m])
+        m.destroy
+      end
     end
   end
 

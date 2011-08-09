@@ -11,10 +11,10 @@ ar_mailer_gemspec = Gem::Specification.new do |s|
   s.name = %q{adzap-ar_mailer}
   s.version = ActionMailer::ARSendmail::VERSION
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Eric Hodel", "Adam Meehan"]
+  s.authors = ["Gaurav Soni"]
   s.default_executable = %q{ar_sendmail}
   s.description = %q{Even delivering email to the local machine may take too long when you have to send hundreds of messages.  ar_mailer allows you to store messages into the database for later delivery by a separate process, ar_sendmail.}
-  s.email = %q{adam.meehan@gmail.com}
+  s.email = %q{raveformails@gmail.com}
   s.executables = ["ar_sendmail"]
   s.extra_rdoc_files = ["History.txt", "LICENSE.txt", "README.rdoc"]
   s.files = [
