@@ -2,27 +2,19 @@
 
 A two-phase delivery agent for ActionMailer
 
-Rubyforge Project:
-
-http://rubyforge.org/projects/seattlerb
-
 Documentation:
 
-http://seattlerb.org/ar_mailer
-
-and for forked additions
-
-http://github.com/adzap/ar_mailer/wikis
+https://github.com/gsoni-ror/ar_mailer
 
 Bugs:
 
-http://adzap.lighthouseapp.com/projects/26997-ar_mailer
+http://armailer.unfuddle.com
 
 == About
 
 Even delivering email to the local machine may take too long when you have to
 send hundreds of messages.  ar_mailer allows you to store messages into the
-database for later delivery by a separate process, ar_sendmail.
+database for later delivery by a separate process, ar_sendmail. Now also allows to set priorities to the mails or skip mail from getting into the queue if required.
 
 == Installing adzap-ar_mailer (forked)
 
