@@ -8,7 +8,7 @@ $:.unshift(File.expand_path(File.dirname(__FILE__) + '/lib'))
 require './lib/action_mailer/ar_sendmail'
 
 ar_mailer_gemspec = Gem::Specification.new do |s|
-  s.name = %q{adzap-ar_mailer}
+  s.name = %q{gsoni-ar_mailer}
   s.version = ActionMailer::ARSendmail::VERSION
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Gaurav Soni"]
@@ -55,7 +55,7 @@ end
 
 desc "Update ar_mailer.gemspec"
 task :make_spec do
-  File.open("adzap-ar_mailer.gemspec", "w") do |f|
+  File.open("gsoni-ar_mailer.gemspec", "w") do |f|
     f.puts(ar_mailer_gemspec.to_ruby)
   end
 end

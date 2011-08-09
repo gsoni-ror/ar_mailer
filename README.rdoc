@@ -24,23 +24,27 @@ Even delivering email to the local machine may take too long when you have to
 send hundreds of messages.  ar_mailer allows you to store messages into the
 database for later delivery by a separate process, ar_sendmail.
 
-== Installing ar_mailer (forked)
+== Installing adzap-ar_mailer (forked)
 
 Before installing you will need to make sure the original gem is uninstalled as they can't coexist:
 
   $ sudo gem uninstall ar_mailer
 
+  Or any previous adzap-ar_mailer gem installation by 
+
+  $ sudo gem uninstall adzap-ar_mailer
+
 Then
 
-  $ sudo gem install adzap-ar_mailer
+  $ sudo gem install gsoni-ar_mailer
 
 For Rails >= 2.1, in your environment.rb:
 
-  config.gem "adzap-ar_mailer", :lib => 'action_mailer/ar_mailer'
+  config.gem "gsoni-ar_mailer", :lib => 'action_mailer/ar_mailer'
 
-  # or since version 2.1.7 of this gem you can now just do
+  # or since version 2.1.10 of this gem you can now just do
 
-  config.gem "adzap-ar_mailer"
+  config.gem "gsoni-ar_mailer"
 
 For Rails 2.0, in an initializer file:
 

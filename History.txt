@@ -1,5 +1,7 @@
-= 2.1.9
+= 2.1.10
+  Update Rake file for gem version and changed gem name to gsoni-ar_mailer
 
+= 2.1.9
 * Miscellaneous Updates
   * Added adzap-ar_mailer priority to send mails in priority.
 
