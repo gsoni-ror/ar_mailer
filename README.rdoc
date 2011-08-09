@@ -83,6 +83,8 @@ Something like:
 
 @priority could be any number, ar_mailer sort mails on priority and send it in the desc order.
 
+Just in case you want to skip any mail from getting into the queue[for Urgent mails], you can assign @priority = -1 :)
+
 Edit config/environments/production.rb and set the delivery method:
 
   config.action_mailer.delivery_method = :activerecord
