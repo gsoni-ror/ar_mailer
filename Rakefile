@@ -39,7 +39,7 @@ ar_mailer_gemspec = Gem::Specification.new do |s|
     "test/test_helper.rb"
   ]
   s.has_rdoc = true
-  s.homepage = %q{http://github.com/adzap/ar_mailer}
+  s.homepage = %q{https://github.com/gsoni-ror/ar_mailer}
   s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{seattlerb}
