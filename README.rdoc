@@ -30,7 +30,7 @@ Then
   Goto your vendor/plugin directory and run 
   $ git clone git@github.com:gsoni-ror/ar_mailer.git
   and 
-  $ sudo gem install gsoni-ar_mailer
+  $ sudo gem install prioritized_ar_mailer
 
 For Rails 2.0, in an initializer file:
 
