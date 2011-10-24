@@ -30,6 +30,7 @@ class ActionMailer::Base
     destinations.each do |destination|
       m = self.class.email_class.create :mail => mail.encoded, :to => destination, :from => sender, :priority => (@priority.present? ? @priority : 3)
       if m.priority==-1
+        m.update_attribute("priority", 10000)        
         sendmail = ActionMailer::ARSendmail.new
         sendmail.deliver([m])
         m.destroy
